@@ -8,5 +8,8 @@ metadata:
 spec:
   forProvider:
     location: EU
+    acl:
+      - entity: AllUsers
+        role: READER
   providerConfigRef:
     name: default
