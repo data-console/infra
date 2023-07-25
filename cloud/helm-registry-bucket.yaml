@@ -1,7 +1,7 @@
 apiVersion: storage.gcp.upbound.io/v1beta1
 kind: Bucket
 metadata:
-  name: helm-registry
+  name: data-console-helm-registry
   namespace: infra
   labels:
     docs.crossplane.io/example: provider-gcp
