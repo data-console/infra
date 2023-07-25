@@ -1,0 +1,15 @@
+apiVersion: storage.gcp.upbound.io/v1beta1
+kind: Bucket
+metadata:
+  name: data-console-helm-registry
+  namespace: infra
+  labels:
+    docs.crossplane.io/example: provider-gcp
+spec:
+  forProvider:
+    location: EU
+    acl:
+      - entity: AllUsers
+        role: READER
+  providerConfigRef:
+    name: default
